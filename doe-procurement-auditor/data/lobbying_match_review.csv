@@ -1,0 +1,150 @@
+client_name,matched_side,vendor_key,confidence,method,ambiguous,runner_up
+"The New York City Arts-in-Education Roundtable, Inc.",client,NYC ARTS IN EDUCATION ROUND TABLE,0.9,truncation,True,0.9
+"Zeta Charter Schools, Inc.",client,ZETA CHARTER SCHOOLS NEW YORK CITY,0.72,containment,False,0.58
+"Success Academy Charter Schools, Inc.",client,HARLEM SUCCESS ACADEMY CHARTER SCHOOL,0.72,containment,True,0.72
+The Young Men's and Young Women's Hebrew Association,client,YOUNG MEN S & WOMEN S HEBREW ASSOCIATION YM WHA,0.72,containment,False,0.47
+The Trustees of Columbia University in the City of New York,client,TRUSTEES OF COLUMBIA UNIVERSITY,0.72,containment,False,0.58
+"Citizens' Committee for Children of New York, Inc.",client,COMMITTEE FOR CHILDREN,0.72,containment,False,0.58
+New York Shakespeare Festival,client,HUDSON VALLEY SHAKESPEARE FESTIVAL,0.72,containment,False,0.58
+Council of School Supervisors and Administrators,client,COUNCIL OF SUPERVISORS & ADMINISTRATORS ADMINISTRATIVE FUND,0.72,containment,True,0.72
+"Teachers College, Columbia University",client,TEACHERS COLLEGE,0.72,containment,False,0.58
+"Red Hat, Inc.",client,RED HAT DAY CARE CENTER,0.72,containment,False,0.333
+"Tishman Speyer Properties, L.P.",client,RCPI LANDMARK PROPERTIES LLC C O TISHMAN SPEYER PROPERTIES,0.72,containment,False,0.25
+Hewlett Packard Enterprise Company,client,HEWLETT PACKARD,0.72,containment,True,0.72
+"Simon Wiesenthal Center, Inc.",client,SIMON WIESENTHAL CENTER MUSEUM OF TOLERANCE,0.72,containment,False,0.333
+"Reel Stories Teen Filmmaking, Inc.",client,REEL STORIES TEEN FILMMAKING INC REEL WORKS TEEN FILMMAKING,0.72,containment,False,0.58
+"First Student, Inc. for the benefit of First Student, Inc. and Total Transportation Corp.",client,STUDENTS FIRST SERVICES,0.72,containment,False,0.58
+"First Student, Inc. for the benefit of First Student, Inc., L & M Bus Corp., Pride Transportation Inc., Quality Transportation Corp., and Total Transportation Corp.",client,STUDENTS FIRST SERVICES,0.72,containment,True,0.72
+"First Student, Inc. on behalf of Bella Bus Corp.; L & M Bus Corp.; Pride Transportation Services Inc.; Quality Transportation Corp. and Total Transportation Corp.",client,STUDENTS FIRST SERVICES,0.72,containment,True,0.72
+"Hamaspik of Kings County, Inc.",client,KINGS COUNTY,0.72,containment,False,0.58
+Cement & Concrete Workers District Council Laborers-Employers Cooperation and Education Trust Fund,client,DISTRICT MANAGEMENT COUNCIL,0.72,containment,False,0.58
+The State University of New York on behalf of The State University of New York at Stony Brook,client,UNIVERSITY OF VT & STATE AGRICULTURAL COLLEGE,0.72,containment,True,0.72
+"Math, Engineering, and Science (MESA) Academy Charter High School",client,MATH ENGINEERING & SCIENCE ACADEMY CHARTER HIGH SCHOOL,0.72,containment,False,0.58
+"Motion Picture Association, Inc.",client,SWANK MOTION PICTURES,0.72,containment,False,0.58
+"Beginning with Children Foundation, Inc.",client,BEGINNING WITH CHILDREN CHARTER SCHOOL,0.72,containment,True,0.72
+"World Wide Technology, Inc.",client,WORLD WIDE TOURS OF GREATER NY,0.72,containment,True,0.72
+"World Wide Technology, LLC",client,WORLD WIDE TOURS OF GREATER NY,0.72,containment,True,0.72
+Verizon Corporate Resources Group LLC,client,CORPORATE RESOURCE DEVELOPMENT,0.72,containment,False,0.58
+Agudath Israel of America,client,AGUDATH ISRAEL OF AMERICA COMMUNITY SERVICES,0.72,containment,False,0.333
+New York City and Vicinity District Council,client,DISTRICT MANAGEMENT COUNCIL,0.72,containment,False,0.58
+Museum of Jewish Heritage: A Living Memorial to the Holocaust,client,A LIVING MEMORIAL TO THE HOLOCAUST MUSEUM OF JEWISH,0.72,containment,True,0.72
+"United Parcel Service, Inc.",client,UNITED PARCEL SERVICE NY,0.72,containment,False,0.58
+NYC Community Medical Care P.C.,client,TAKE CARE MEDICAL HEALTH NEW YORK,0.72,containment,False,0.58
+New York Junior Tennis and Learning,client,NEW YORK JUNIOR TENNIS LEAGUE,0.72,containment,True,0.72
+"McDonald's USA, LLC.",client,USA MCDONALD CORPORATION NORCO PRODUCTS,0.72,containment,False,0.58
+"New Green Willets, LLC",client,E B GREEN CONSULTING,0.58,containment,True,0.58
+"Revolution Foods, Inc.",client,NATIONAL CENTER FOR THE AMERICAN REVOLUTION,0.58,containment,True,0.58
+"New York City Central Labor Council, AFL-CIO",client,AMERICAN COUNCILS FOR INTERNATIONAL EDUCATION,0.58,containment,False,0.286
+"New York Blood Center, Inc.",client,MOST PRECIOUS BLOOD ROMAN CATHOLIC CHURCH,0.58,containment,True,0.58
+"ROAR New York, Inc.",client,ROAR CONSULTING,0.58,containment,False,
+"Real Builders, Inc.",client,ED BUILDERS,0.58,containment,False,0.333
+RTB Distributors LLC,client,C & H DISTRIBUTORS,0.58,containment,True,0.58
+New York Recycling Solutions LLC,client,A&L CESSPOOL SERVICE CORP A&L RECYCLING,0.58,containment,False,
+Queens Center SPE LLC,client,QUEEN LEARNING,0.58,containment,False,0.333
+Prestige Properties & Development  Co.,client,PRESTIGE,0.58,containment,True,0.58
+Pinnacle Energy Group Inc.,client,PINNACLE EDUCATION SERVICES,0.58,containment,False,0.333
+"Palo Alto Networks, Inc.",client,NEW TECHNOLOGY NETWORK,0.58,containment,True,0.58
+"PM Pediatrics Management Group, LLC",client,NEW ENGLAND LONG TERM CARE INC NE PEDIATRIC CARE,0.58,containment,True,0.58
+Northeast Charter Schools Network Inc,client,COMMUNITY PARTNERSHIP CHARTER SCHOOL,0.58,containment,True,0.58
+"Roof Asset Management, U.S.A., Ltd.",client,J & J ASSETS,0.58,containment,False,0.333
+Robin Hood Foundation,client,MY ROBIN,0.58,containment,False,0.333
+"Stride Learning, Inc.",client,STEPS N STRIDES PT,0.58,containment,True,0.58
+Russo's On The Bay,client,JS ON THE BAY,0.58,containment,False,0.333
+"The Rector, Church-Wardens and Vestrymen of Trinity Church",client,CHURCH COMMUNITIES FOUNDATION,0.58,containment,False,0.333
+"Youth Justice Network, Inc.",client,EDUCATIONAL NETWORKS,0.58,containment,True,0.58
+"Yondr Investor Group, LLC",client,YONDR,0.58,containment,True,0.58
+"Worldwide Environmental Services, LLC",client,VR WORLDWIDE,0.58,containment,True,0.58
+West Side Citizens for Affordable Housing Inc.,client,SIDE BY SIDE NY,0.58,containment,True,0.58
+"Vista Equity Partners Management, LLC",client,PARTNERS FOR LEARNING,0.58,containment,True,0.58
+"Vertical Community Development, LLC",client,VERTICAL SYSTEMS ANALYSIS,0.58,containment,True,0.58
+"Univision Communications, Inc.",client,D S COMMUNICATION SERVICES,0.58,containment,True,0.58
+"United Neighborhood Houses of New York, Inc.",client,UNITED ACADEMY,0.58,containment,True,0.58
+"United Jewish Appeal-Federation of Jewish Philanthropies of New York, Inc.",client,UNITED ACADEMY,0.58,containment,True,0.58
+"USA Scheduler, LLC",client,L & S UNITED,0.58,containment,True,0.58
+Trinity Centre LLC,client,TRINITY INTERNATIONAL INDUSTRIES,0.58,containment,True,0.58
+"The Related Companies, LP",client,RELATED SERVICES ASSOCIATES,0.58,containment,True,0.58
+"The Peninsula JV, LLC",client,PENINSULA LIMOUSINE,0.58,containment,True,0.58
+"SAP Public Services, Inc.",client,PUBLIC CONSULTING GROUP,0.58,containment,False,0.333
+"The New York Staffing Association, Inc.",client,GENEVA WORLDWIDE INC GENEVA STAFFING SERVICES,0.58,containment,True,0.58
+The New York Climate Exchange Inc.,client,NATIONAL SCHOOL CLIMATE CENTER,0.58,containment,False,0.333
+The Children's Rescue Fund,client,FUNDS FOR LEARNING,0.58,containment,True,0.58
+"The Bronx High School of Science Alumni Foundation, Inc.",client,CITY SCIENCE,0.58,containment,True,0.58
+"The Alliance for a Greater New York, Inc.",client,EDUCATIONAL ALLIANCE,0.58,containment,True,0.58
+"TPR Technical Sales, Inc.",client,TECHNICAL INSTITUTE OF AMERICA,0.58,containment,True,0.58
+TD Bank US Holding Company,client,PK HOLDINGS,0.58,containment,True,0.58
+"National Strategies, LLC for the benefit of Tanium Inc.",client,M & M STRATEGIES CONSULTING,0.58,containment,True,0.58
+Statcare Urgent & Walk In Medical Care PLLC,client,NEW YORK CARES,0.58,containment,True,0.58
+Share Our Strength,client,STRENGTH SOLUTIONS,0.58,containment,True,0.58
+"Salesforce, Inc.",client,SALESFORCE COM,0.58,containment,False,
+"SOMOS Healthcare Providers, Inc.",client,JG PROVIDER SERVICES,0.58,containment,False,0.25
+"NetApp U.S. Public Sector, Inc. with Magnit, LLC as a third-party payor",client,PARTY SERVICES,0.58,containment,True,0.58
+AKB Security Corp.,client,GLOBAL SECURITY GROUP,0.58,containment,True,0.58
+"National Strategies, LLC for the benefit of Pure Storage, Inc.",client,M & M STRATEGIES CONSULTING,0.58,containment,True,0.58
+City Testing Centers LLC,client,EDUCATIONAL TESTING SERVICE,0.58,containment,True,0.58
+"Essence Development, LLC",client,ECHO YOUR ESSENCE SPEECH LANGUAGE PATHOLOGY,0.58,containment,True,0.58
+"Empire State Employment Resources for the Blind, Inc.",client,EDUCATIONAL RESOURCE SERVICES,0.58,containment,True,0.58
+"National Strategies, LLC for the benefit of Genesys Cloud Services, Inc.",client,M & M STRATEGIES CONSULTING,0.58,containment,True,0.58
+"Elmy's Special Services, Inc.",client,NEW YORK INSTITUTE FOR SPECIAL EDUCATION,0.58,containment,True,0.58
+Education Equity Campaign,client,EQUITY CONSULTING GROUP,0.58,containment,True,0.58
+"Economic Security Project, Inc.",client,A TECHNOLOGY & SECURITY SOLUTIONS,0.58,containment,True,0.58
+"Dynamic Star, LLC",client,DYNAMIC LEARNING SERVICES,0.58,containment,True,0.58
+David Carrie Staffing LLC,client,NATIONAL STAFFING SOLUTIONS,0.58,containment,True,0.58
+"CyberArk Software, Inc.",client,RK SOFTWARE,0.58,containment,True,0.58
+"Creative Mobile Technologies, LLC",client,RG CREATIVE LEARNING,0.58,containment,True,0.58
+"Climate Jobs NY, Inc.",client,NATIONAL SCHOOL CLIMATE CENTER,0.58,containment,False,0.333
+Clean Air Solutions USA Corp.,client,L & S UNITED,0.58,containment,True,0.58
+"Citizens Budget Commission, Inc.",client,CITIZEN SCHOOLS,0.58,containment,False,0.45
+"Extreme Networks, Inc.",client,NEW TECHNOLOGY NETWORK,0.58,containment,True,0.58
+"Charter Communications Operating, LLC",client,COMMUNITY PARTNERSHIP CHARTER SCHOOL,0.58,containment,True,0.58
+"Catholic Community Relations Council of New York, Inc.",client,AMERICAN COUNCILS FOR INTERNATIONAL EDUCATION,0.58,containment,False,0.25
+Carrier Corporation,client,SUPERIOR CARRIERS,0.58,containment,True,0.58
+Care for the Homeless,client,ED CARE,0.58,containment,True,0.58
+"Caesars Enterprise Services, LLC",client,CJ & JC ENTERPRISE,0.58,containment,True,0.58
+Cablevision Lightpath LLC,client,CABLEVISION SYSTEMS NEW YORK CITY,0.58,containment,False,
+Brownsville Arts Owner LLC,client,CENTER FOR ARTS EDUCATION,0.58,containment,True,0.58
+"Brooklyn Tech Alumni Foundation, Inc.",client,BROOKLYN ON TECH,0.58,containment,True,0.58
+Autism Society Habilitation Organization Inc.,client,COMMUNITY SERVICE SOCIETY OF NEW YORK,0.58,containment,True,0.58
+Arker Diversified Companies,client,US DIVERSIFIED TECH,0.58,containment,False,0.333
+"Agallas Equities, LLC",client,EQUITY CONSULTING GROUP,0.58,containment,True,0.58
+Adapt Community Network,client,NEW TECHNOLOGY NETWORK,0.58,containment,True,0.58
+"ExtraHop Networks, Inc.",client,EDUCATIONAL NETWORKS,0.58,containment,True,0.58
+"Museum of the City of New York, Inc.",client,NASSAU COUNTY MUSEUM OF ART,0.58,containment,True,0.58
+Front Line Consultants Corp.,client,EDUCATIONAL SOLUTIONS CONSULTANTS,0.58,containment,True,0.58
+"INDA, ASSOCIATION OF THE NONWOVEN FABRICS INDUSTRY",client,KB INDUSTRIES,0.58,containment,True,0.58
+NRP Market Rate Developer LLC for the benefit of The NRP Group LLC,client,COMMUNITY DEVELOPERS,0.58,containment,True,0.58
+NRP Market Rate Developer LLC,client,COMMUNITY DEVELOPERS,0.58,containment,True,0.58
+"Acacia Network, Inc.",client,NEW TECHNOLOGY NETWORK,0.58,containment,True,0.58
+"Montefiore Medicine Academic Health System, Inc.",client,HEALTH & THE CITY,0.58,containment,True,0.58
+McAfee Public Sector LLC,client,PUBLIC CONSULTING GROUP,0.58,containment,False,0.45
+Mastermind Development LLC,client,MASTERMINDS ABA,0.58,containment,True,0.58
+Lily & John Realty Inc.,client,NEW REALTY SERVICES,0.58,containment,True,0.58
+Kulanu Academy,client,KULANU JEWISH COALITION FOR SP SERVICES KULANU TORAH ACADEM,0.58,containment,False,
+"Fund for the City of New York, Inc.",client,GREEN WOOD HISTORIC FUND,0.58,containment,True,0.58
+"Jewish Orthodox Women's Medical Association, Inc.",client,MEDICAL EDUCATIONAL SERVICES,0.58,containment,True,0.58
+Intercept Interactive Inc.,client,D & A INTERACTIVE,0.58,containment,True,0.58
+"Joseph A. DeLuca Advisory and Consulting Services, LLC",client,JOSEPH H,0.58,containment,True,0.58
+Green Acres Adjacent LLC,client,GREEN EDUCATION SERVICES,0.58,containment,True,0.58
+Google Public Sector LLC,client,PUBLIC CONSULTING GROUP,0.58,containment,False,0.45
+ICP,client,ISLAND COMPUTER PRODUCTS INC ICP,0.58,containment,False,
+"Hyland Software, Inc.",client,RK SOFTWARE,0.58,containment,True,0.58
+"Hazel Health, Inc.",client,AMERICAN SCHOOL HEALTH ASSOCIATION,0.58,containment,True,0.58
+Hand Over Hand LLC,client,HAND IN HAND DEVELOPMENT,0.58,containment,False,0.333
+The Mount Sinai Hospital,client,MOUNT SINAI SCHOOL OF MEDICINE,0.45,token-overlap-weak,True,0.43
+GVA Capital LLC,client,MGR CAPITAL,0.333,insufficient,True,0.333
+"Adirondack Combustion Technologies, Inc.",client,ADIRONDACK CHAIR,0.333,insufficient,True,0.333
+"GitLab Federal, LLC",client,FEDERAL CENTER HOTEL,0.333,insufficient,True,0.333
+"Anthos Home, Inc.",client,HOME BASS,0.333,insufficient,True,0.333
+Apprentos PBC,client,PARENTPOWERED PBC,0.333,insufficient,True,0.333
+"New York Building Congress, Inc.",client,BUILDING MAINTENANCE,0.333,insufficient,True,0.333
+Critical Response Group Inc.,client,CRITICAL MENTION,0.333,insufficient,True,0.333
+"Medify Air, LLC",client,COOL AIR,0.333,insufficient,True,0.333
+"Coalition for the Homeless, Inc.",client,ASIAN AMERICAN COALITION FOR EDUCATION,0.333,insufficient,True,0.333
+Justin Pelsinger,client,CHVD JUSTIN,0.333,insufficient,True,0.333
+"Pixis Drones, LLC",client,DRONE SPORTS,0.333,insufficient,True,0.333
+Cultural Institutions Group,client,BROOKLYN CULTURAL CENTER OF N Y,0.333,insufficient,True,0.333
+"Clear Ballot Group, Inc.",client,CLEAR VISION SERVICES,0.333,insufficient,True,0.333
+"StudentsFirst New York Advocacy, Inc.",client,AU SCENSION ADVOCACY & CONSULTING,0.333,insufficient,True,0.333
+"Robotic Assistance Devices, Inc.",client,DOUBLE ROBOTICS,0.25,insufficient,True,0.25
+Brookfield Financial Properties LLC,client,JJPB PROPERTIES,0.25,insufficient,True,0.25
+"BGR Government Affairs, LLC",client,PROTIVITI GOVERNMENT SERVICES,0.25,insufficient,True,0.25
+Local 32BJ SEIU,client,BUILDING SERVICES 32BJ LEGAL SERVICES FUND,0.167,insufficient,True,0.167

@@ -1,0 +1,356 @@
+/* DOE Procurement Auditor — design system.
+   Ported from the Marathon Trainer dashboard: same tokens, same Inter
+   typeface, same card / nav / table language. Edit this file directly; the
+   build copies it into site/static/ untouched. */
+
+:root {
+  --bg:         #F6F8FC;
+  --surface:    #FFFFFF;
+  --border:     #E8EDF5;
+  --border-2:   #F1F5FA;
+
+  --ink:        #0F172A;
+  --ink-2:      #475569;
+  --ink-3:      #94A3B8;
+
+  --blue:       #2563EB;
+  --blue-deep:  #1D4ED8;
+  --blue-2:     #60A5FA;
+  --blue-pale:  #BFDBFE;
+  --blue-tint:  #EFF4FE;
+
+  --good:       #10B981;  --good-bg:  #D1FAE5;
+  --warn:       #F59E0B;  --warn-bg:  #FEF3C7;
+  --risk:       #EF4444;  --risk-bg:  #FEE2E2;
+  --neutral:    #94A3B8;  --neutral-bg:#F1F5F9;
+
+  --shadow:     0 1px 2px rgba(15,23,42,.04), 0 8px 24px rgba(15,23,42,.04);
+  --shadow-lg:  0 2px 4px rgba(15,23,42,.04), 0 16px 40px rgba(15,23,42,.07);
+
+  --r-card:     16px;
+  --r-tile:     12px;
+  --r-sm:       10px;
+
+  --sidebar-w:  248px;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+body { font-variant-numeric: tabular-nums; }
+a { color: inherit; text-decoration: none; }
+svg { display: block; }
+/* ══ Layout shell ══════════════════════════════════════════════════════ */
+
+.shell { display: flex; min-height: 100vh; }
+.sidebar {
+  width: var(--sidebar-w);
+  min-width: var(--sidebar-w);
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+.main { flex: 1; min-width: 0; padding: 28px 32px 56px; }
+/* ── Logo ── */
+.logo { display: flex; align-items: center; gap: 11px; padding: 4px 8px 0; }
+.logo-mark {
+  width: 34px; height: 34px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--blue);
+}
+.logo-mark svg { width: 30px; height: 30px; }
+.logo-text { display: flex; flex-direction: column; line-height: 1.15; }
+.logo-text .l1 { font-size: 13px; font-weight: 700; letter-spacing: .13em; color: var(--ink); }
+.logo-text .l2 { font-size: 10.5px; font-weight: 500; letter-spacing: .19em; color: var(--ink-3); }
+/* ── Nav ──
+   Frosted chips over the tinted backdrop; the current page is the only fully
+   opaque item in the column, so it reads as selected at a glance. */
+.nav { display: flex; flex-direction: column; gap: 6px; }
+.nav-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 12px;
+  border-radius: var(--r-sm);
+  font-size: 14px; font-weight: 500;
+  color: var(--ink-2);
+  background: rgba(255, 255, 255, .74);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, .06);
+  transition: background .14s, color .14s, box-shadow .14s;
+}
+.nav-item svg { width: 18px; height: 18px; color: var(--ink-3); transition: color .14s; }
+.nav-item:hover { background: rgba(255, 255, 255, .92); color: var(--ink); }
+.nav-item:hover svg { color: var(--ink-2); }
+.nav-item.active {
+  background: var(--blue); color: #fff; font-weight: 600;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, .34);
+}
+.nav-item.active svg { color: #fff; }
+.sidebar-spacer { flex: 1; }
+/* Faint blue wash at the foot of the column, the analogue of the Central Park
+   backdrop in the trainer. Decorative only. */
+.sidebar::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(37,99,235,0) 38%, rgba(37,99,235,.07) 100%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 30%, #000 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 30%, #000 100%);
+  pointer-events: none;
+}
+.sidebar > * { position: relative; z-index: 1; }
+/* ── Coverage card in the sidebar foot ── */
+.coverage {
+  border: 1px solid var(--border);
+  border-radius: var(--r-tile);
+  padding: 14px 16px 16px;
+  background: var(--surface);
+}
+.coverage .cov-label {
+  font-size: 10px; font-weight: 600; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+.coverage .cov-big {
+  font-size: 30px; font-weight: 700; color: var(--ink);
+  line-height: 1.05; margin-top: 8px; letter-spacing: -.02em;
+}
+.coverage .cov-note { font-size: 11.5px; color: var(--ink-3); margin-top: 4px; }
+/* ══ Page heading ══════════════════════════════════════════════════════ */
+
+.page-head { margin-bottom: 22px; }
+.page-title { font-size: 26px; font-weight: 700; letter-spacing: -.02em; margin: 0; }
+.page-sub { font-size: 14px; color: var(--ink-3); margin: 4px 0 0; max-width: 82ch; }
+/* ══ Cards ═════════════════════════════════════════════════════════════ */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  box-shadow: var(--shadow);
+  padding: 20px 22px;
+  display: flex; flex-direction: column;
+  min-width: 0;
+}
+.card-head {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; margin-bottom: 14px;
+}
+.card-title { font-size: 21px; font-weight: 600; color: var(--ink); margin: 0; letter-spacing: -.01em; }
+.card-body-text { font-size: 13.5px; color: var(--ink-2); margin: 8px 0 0; }
+.meta { font-size: 12.5px; color: var(--ink-3); }
+.eyebrow {
+  display: flex; align-items: center; gap: 7px;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: .07em; text-transform: uppercase;
+  color: var(--ink-3);
+}
+.eyebrow svg { width: 14px; height: 14px; color: var(--ink-3); }
+/* ── Badges ── */
+.badge {
+  display: inline-flex; align-items: center;
+  padding: 3px 9px; border-radius: 999px;
+  font-size: 11px; font-weight: 600; letter-spacing: .01em;
+  background: var(--neutral-bg); color: var(--ink-2);
+  white-space: nowrap;
+}
+.badge.blue { background: var(--blue-tint); color: var(--blue); }
+.badge.good { background: var(--good-bg); color: #047857; }
+.badge.warn { background: var(--warn-bg); color: #B45309; }
+.badge.risk { background: var(--risk-bg); color: #B91C1C; }
+/* Marks a feature whose value is fixed by the contract's term length, which
+ * procurement rules tie to the award method. Quieter than a badge on purpose:
+ * it qualifies a label rather than reporting a result. */
+.tag {
+  display: inline-block; vertical-align: 1px;
+  padding: 1px 6px; border-radius: 4px;
+  font-size: 9.5px; font-weight: 700; letter-spacing: .04em;
+  text-transform: uppercase;
+  background: var(--neutral-bg); color: var(--ink-3);
+}
+.tone-good { color: var(--good); }
+.tone-warn { color: var(--warn); }
+.tone-risk { color: var(--risk); }
+.tone-neutral { color: var(--ink-3); }
+/* ══ Grid ══════════════════════════════════════════════════════════════ */
+
+.grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 18px; }
+.sp3 { grid-column: span 3; }
+.sp4 { grid-column: span 4; }
+.sp5 { grid-column: span 5; }
+.sp6 { grid-column: span 6; }
+.sp7 { grid-column: span 7; }
+.sp8 { grid-column: span 8; }
+.sp12 { grid-column: span 12; }
+@media (max-width: 1280px) {
+  .sp3, .sp5 { grid-column: span 6; }
+  .sp7 { grid-column: span 12; }
+}
+/* The input rail and the verdict are a pair, and the rail only needs ~280px, so
+   they stay side by side well past the point other cards give up. Below this
+   they both go full width together rather than stranding a half-width rail on
+   its own row above the reading. */
+@media (max-width: 1024px) {
+  .sp4, .sp8 { grid-column: span 12; }
+}
+@media (max-width: 860px) {
+  .sp3, .sp4, .sp5, .sp6, .sp7, .sp8 { grid-column: span 12; }
+  .sidebar { display: none; }
+  .main { padding: 20px; }
+}
+/* ══ Stat tiles ════════════════════════════════════════════════════════ */
+
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(158px, 1fr)); gap: 14px; margin-bottom: 20px; }
+.tile {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-tile); padding: 14px 16px; box-shadow: var(--shadow);
+}
+.tile b { display: block; font-size: 24px; font-weight: 700; letter-spacing: -.02em; line-height: 1.15; }
+.tile span { font-size: 10.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+/* ══ Tables ════════════════════════════════════════════════════════════ */
+
+.table-wrap { overflow-x: auto; }
+table.data { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+table.data thead th {
+  text-align: left; padding: 0 14px 10px 0;
+  font-size: 10.5px; font-weight: 600; letter-spacing: .07em;
+  text-transform: uppercase; color: var(--ink-3);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+table.data thead th.num, table.data tbody td.num { text-align: right; }
+table.data tbody td {
+  padding: 12px 14px 12px 0;
+  border-bottom: 1px solid var(--border-2);
+  color: var(--ink-2); white-space: nowrap;
+}
+table.data tbody tr:last-child td { border-bottom: none; }
+/* Cells holding prose or a variable number of badges. Without this the default
+ * nowrap forces the whole table into a horizontal scroll, which is exactly what
+ * made the old three-table layout unreadable. */
+table.data tbody td.wrap, table.data thead th.wrap { white-space: normal; }
+table.data tbody td.wrap-tight { white-space: normal; min-width: 9rem; }
+/* Badge stacks: let them flow onto as many lines as they need. */
+table.data tbody td.badges {
+  white-space: normal;
+  display: table-cell;
+  line-height: 2.1;
+}
+table.data td.strong { color: var(--ink); font-weight: 600; }
+table.data tbody tr.clickable { cursor: pointer; }
+table.data tbody tr.clickable:hover td { background: var(--blue-tint); }
+table.data tbody tr.detail td {
+  white-space: normal; background: var(--blue-tint);
+  color: var(--ink-2); font-size: 12.5px; line-height: 1.55;
+  padding: 12px 14px;
+}
+table.data tbody tr.detail b { color: var(--ink); }
+/* ══ Toolbar ═══════════════════════════════════════════════════════════ */
+
+.toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 16px; }
+.toolbar .count { font-size: 12.5px; color: var(--ink-3); margin-left: auto; }
+input[type="text"], input[type="search"], select {
+  font-family: inherit; font-size: 13.5px;
+  padding: 9px 12px;
+  background: var(--surface); color: var(--ink);
+  border: 1px solid var(--border); border-radius: var(--r-sm);
+  box-shadow: 0 1px 2px rgba(15,23,42,.03);
+}
+input[type="text"] { min-width: 240px; }
+input::placeholder { color: var(--ink-3); }
+input:focus-visible, select:focus-visible, button:focus-visible,
+tr.clickable:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+/* ══ Scorer controls ═══════════════════════════════════════════════════ */
+
+.field { margin-bottom: 18px; }
+.field label {
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-size: 11px; font-weight: 600; letter-spacing: .07em;
+  text-transform: uppercase; color: var(--ink-3); margin-bottom: 8px;
+}
+.field label b { font-size: 14px; font-weight: 600; color: var(--ink); letter-spacing: 0; text-transform: none; }
+input[type="range"] { width: 100%; accent-color: var(--blue); margin: 0; }
+.chips { display: flex; gap: 7px; flex-wrap: wrap; }
+.chip {
+  font-family: inherit; font-size: 12.5px; font-weight: 500;
+  padding: 7px 13px; cursor: pointer;
+  border: 1px solid var(--border); border-radius: 999px;
+  background: var(--surface); color: var(--ink-2);
+  transition: background .14s, color .14s, border-color .14s;
+}
+.chip:hover { border-color: var(--blue-pale); color: var(--blue); }
+.chip[aria-pressed="true"] {
+  background: var(--blue); border-color: var(--blue); color: #fff; font-weight: 600;
+  box-shadow: 0 2px 8px rgba(37,99,235,.28);
+}
+/* ── Verdict panel ── */
+.verdict { align-items: center; text-align: center; }
+.gauge { margin: 4px auto 0; display: block; max-width: 100%; height: auto; }
+.pval { font-size: 42px; font-weight: 700; letter-spacing: -.025em; line-height: 1; margin-top: 2px; }
+.vlabel { font-size: 16px; font-weight: 600; color: var(--ink); margin-top: 10px; }
+.vnote { font-size: 13px; color: var(--ink-2); margin-top: 6px; }
+/* The reading is the point of the page, so it gets the room. */
+.verdict-lg { justify-content: center; padding: 28px 24px 26px; }
+.verdict-lg .pval { font-size: 76px; margin-top: 6px; }
+.verdict-lg .vlabel { font-size: 19px; margin-top: 12px; }
+.verdict-lg .vnote { font-size: 14px; max-width: 46ch; }
+.verdict-lg .vctx {
+  margin: 18px auto 0; padding-top: 16px; max-width: 56ch;
+  border-top: 1px solid var(--border-2); font-size: 13px; color: var(--ink-3);
+}
+/* Input rail: quieter than the verdict beside it. Labels wrap rather than
+ * colliding with their value readout, which they do at rail widths. */
+.rail .field label { font-size: 10.5px; flex-wrap: wrap; gap: 2px 10px; }
+.rail .field label b { margin-left: auto; }
+.rail .chip { font-size: 12px; padding: 6px 11px; }
+/* Anomaly rows lead the queue and are marked as such. */
+table.data tbody tr.lead td { background: var(--risk-bg); }
+table.data tbody tr.lead:hover td { background: var(--risk-bg); filter: brightness(.985); }
+table.data td .sub {
+  display: block; margin-top: 3px; font-size: 11px; font-weight: 500;
+  color: var(--ink-3); white-space: normal;
+}
+.contrib { width: 100%; margin-top: 20px; border-top: 1px solid var(--border-2); padding-top: 14px; }
+.crow {
+  display: grid; grid-template-columns: 118px 1fr 44px;
+  gap: 10px; align-items: center;
+  font-size: 11.5px; color: var(--ink-3); margin-bottom: 7px;
+}
+.crow:last-child { margin-bottom: 0; }
+.cbar { height: 7px; background: var(--border); border-radius: 999px; position: relative; }
+.cbar i { position: absolute; top: 0; bottom: 0; border-radius: 999px; }
+.crow .cval { text-align: right; font-weight: 600; color: var(--ink-2); }
+/* ── Horizontal bar rows (industry rates) ── */
+.bars { display: flex; flex-direction: column; gap: 10px; }
+.bar-row { display: grid; grid-template-columns: 172px 1fr 116px; gap: 12px; align-items: center; font-size: 12.5px; }
+.bar-row .bl { color: var(--ink-2); font-weight: 500; }
+.bar-row .bv { text-align: right; color: var(--ink-3); }
+/* ══ Callouts ══════════════════════════════════════════════════════════ */
+
+.note {
+  border-radius: var(--r-tile);
+  background: var(--blue-tint);
+  padding: 16px 18px;
+  margin-top: 18px;
+}
+.note.warn { background: var(--warn-bg); }
+.note h3 { font-size: 14.5px; font-weight: 600; margin: 0 0 6px; color: var(--ink); }
+.note p { margin: 0; font-size: 13px; color: var(--ink-2); max-width: 92ch; }
+.note p + p { margin-top: 8px; }
+footer.foot {
+  margin-top: 40px; padding-top: 18px;
+  border-top: 1px solid var(--border);
+  font-size: 12.5px; color: var(--ink-3);
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
